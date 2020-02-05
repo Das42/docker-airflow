@@ -1,13 +1,11 @@
 ## An updated version of puckel/docker-airflow
 * Adds the following to the apache-airflow installation:
--gcs
--salesforce
--snowflake
+gcs, salesforce, snowflake
 
 ## How to use this
 1. Clone this repo and `cd` into the repo
 2. `sudo docker build -t <name-you-want> .`
-3. `docker run -d -p 8080:8080 -v /path/to/dags/folder/:/usr/local/airflow/dags -v /path/to/plugins/folder:/usr/local/airflow/plugins better-docker-airflow`
+3. `docker run -d -p 8080:8080 -v /path/to/dags/folder/:/usr/local/airflow/dags -v /path/to/plugins/folder:/usr/local/airflow/plugins <name-you-want>`
 
 ## Modifying this further
 1. Clone this repo (or create your own fork if you want to save your copy to your Github account)
