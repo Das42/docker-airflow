@@ -1,3 +1,23 @@
+## An updated version of puckel/docker-airflow
+* Adds the following to the apache-airflow installation:
+-gcs
+-salesforce
+-snowflake
+
+## How to use this
+1. Clone this repo and `cd` into the repo
+2. `sudo docker build -t <name-you-want> .`
+3. `docker run -d -p 8080:8080 -v /path/to/dags/folder/:/usr/local/airflow/dags -v /path/to/plugins/folder:/usr/local/airflow/plugins better-docker-airflow`
+
+## Modifying this further
+1. Clone this repo (or create your own fork if you want to save your copy to your Github account)
+2. Edit the Dockerfile/anything else as needed
+3. Run the same `docker build` and `docker run` as described in steps 2 and 3 above
+4. If forked, commit and push to your fork to save or build on in the future
+
+
+========================================
+
 # docker-airflow
 [![CI status](https://github.com/puckel/docker-airflow/workflows/CI/badge.svg?branch=master)](https://github.com/puckel/docker-airflow/actions?query=workflow%3ACI+branch%3Amaster+event%3Apush)
 [![Docker Build status](https://img.shields.io/docker/build/puckel/docker-airflow?style=plastic)](https://hub.docker.com/r/puckel/docker-airflow/tags?ordering=last_updated)
